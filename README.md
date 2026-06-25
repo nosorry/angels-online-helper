@@ -9,6 +9,10 @@ first shows a preview pop-up that explains exactly what will happen and what it
 needs. If something it needs is missing, the pop-up flags it with a red cross as
 a warning, but still lets you proceed if you want to try.
 
+<p align="center">
+  <img src="docs/preview.png" alt="Angels Online Helper main window" width="900">
+</p>
+
 ---
 
 ## Bugs and feature requests
