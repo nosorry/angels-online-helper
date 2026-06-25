@@ -216,3 +216,9 @@ for this step, never for the shipped executable.
 The initial idea for this project came from
 [Bobo100/angels-online-afk-bot](https://github.com/Bobo100/angels-online-afk-bot).
 Thanks for the inspiration.
+
+---
+
+<p align="center">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=nosorry.angels-online-helper" alt="Page views" />
+</p>
