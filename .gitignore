@@ -1,0 +1,21 @@
+# *.json
+screenshot.py
+machine_learning_for digit test.py
+machine_learning_for digit.py
+model_details.py
+test.py
+get_memory.py
+dataset/
+dataset-origin/
+data.json
+sample.json
+.venv/
+__pycache__/
+build/
+dist/
+*.spec
+.superpowers/
+.claude/
+
+# Built binary is distributed via GitHub Releases, not committed to the repo
+*.exe

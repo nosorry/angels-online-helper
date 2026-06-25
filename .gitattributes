@@ -1,0 +1,11 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Never normalize the shipped binary
+*.exe binary
+my_model.onnx binary
+my_model.h5 binary
+
+# Image assets are binary (app icon source + bundled icon)
+*.png binary
+*.ico binary

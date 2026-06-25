@@ -1,0 +1,11 @@
+numpy==1.26.4
+Pillow==10.4.0
+opencv-python==4.9.0.80
+aircv==1.4.6
+pyautogui==0.9.54
+pydirectinput==1.0.4
+pygetwindow==0.0.9
+pywin32==306
+py_win_keyboard_layout==0.2
+onnxruntime==1.18.1
+pyinstaller==6.10.0

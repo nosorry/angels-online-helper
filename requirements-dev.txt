@@ -1,0 +1,4 @@
+-r requirements.txt
+tensorflow==2.16.2
+keras==3.8.0
+tf2onnx==1.16.1
