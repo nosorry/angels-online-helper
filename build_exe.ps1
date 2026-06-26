@@ -30,9 +30,9 @@ $pyinstaller = Join-Path $projectRoot ".venv\Scripts\pyinstaller.exe"
     --windowed `
     --name AngelsOnlineHelper `
     --icon (Join-Path $projectRoot "angel.ico") `
+    --version-file (Join-Path $projectRoot "version_info.txt") `
     --add-data "image;image" `
     --add-data "my_model.onnx;." `
-    --add-data "start_game.json;." `
     --add-data "angel.ico;." `
     --add-data "$tclDir;_tcl_data" `
     --add-data "$tkDir;_tk_data" `

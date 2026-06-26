@@ -49,7 +49,8 @@ learning runtime. Everything the helper needs is bundled inside the executable.
 - `onnxruntime` plus the navigation model `my_model.onnx` (used to read your
   character's on-screen coordinates for Auto Navigate),
 - the template images in `image/` used to find buttons and the reward timer,
-- a default launcher configuration (`start_game.json`).
+- a built-in default launcher path and game window title (used until you set
+  your own with Edit Launcher Path).
 
 Because the runtime uses `onnxruntime` instead of TensorFlow, the executable is
 around 100-150 MB instead of 700 MB+.
@@ -90,6 +91,45 @@ Passwords are **hidden by default**. In the **Account Vault**:
   **Hide passwords** to mask it again.
 - The password input field is masked as you type, with a small eye to reveal just
   that field.
+
+---
+
+## Is it safe? (Windows SmartScreen)
+
+`AngelsOnlineHelper.exe` is new software from an independent developer and is not
+yet code-signed with a paid certificate, so Windows SmartScreen may show a blue
+**"Windows protected your PC"** notice the first time you run it. That notice
+means Windows has not seen this exact file many times yet. It is not a virus
+warning, and the helper is not malware.
+
+To run it:
+
+1. Click **More info**.
+2. Click **Run anyway**.
+
+Prefer to check before you trust it? You have every option:
+
+- The complete source code is in this repository - nothing is hidden, and you can
+  build the exe yourself (see Build from source below).
+- Scan the download at [VirusTotal](https://www.virustotal.com/) - upload the file
+  or paste the hash below.
+- Verify the file you downloaded matches the official build. The SHA-256 of
+  `AngelsOnlineHelper.exe` for v1.0.0 is:
+
+  ```text
+  7D9436BB1177526260A6B05E61CC1944BB5A6BC823DDA9DFE153E1E70A83209F
+  ```
+
+  Check it on your machine with:
+
+  ```powershell
+  Get-FileHash .\AngelsOnlineHelper.exe -Algorithm SHA256
+  ```
+
+A large unsigned exe like this one (it bundles the Python runtime, the GUI
+toolkit, and the ONNX navigation model) is exactly the kind of file SmartScreen is
+cautious about until it builds a reputation. The notice fades as more people
+download and run the helper, and it disappears once the program is code-signed.
 
 ---
 
@@ -190,9 +230,9 @@ The release executable is created at:
 dist\AngelsOnlineHelper.exe
 ```
 
-The build bundles `image/`, `my_model.onnx`, `start_game.json`, and the Tcl/Tk
-data into a single `--onefile --windowed` executable. The runtime uses
-`onnxruntime` for navigation inference; TensorFlow is **not** bundled.
+The build bundles `image/`, `my_model.onnx`, and the Tcl/Tk data into a single
+`--onefile --windowed` executable. The runtime uses `onnxruntime` for navigation
+inference; TensorFlow is **not** bundled.
 
 ### Regenerating the navigation model (maintainers)
 
