@@ -20,6 +20,9 @@ a warning, but still lets you proceed if you want to try.
 Found a bug, or want a feature added in a future version? Send me a direct
 message on Discord - my handle is **`no.sorry`** - and I will take a look.
 
+See [KNOWN_ISSUES.md](KNOWN_ISSUES.md) for what was recently fixed and what is
+still on the list.
+
 ---
 
 ## Support
@@ -117,7 +120,7 @@ Prefer to check before you trust it? You have every option:
   `AngelsOnlineHelper.exe` for v1.0.0 is:
 
   ```text
-  7D9436BB1177526260A6B05E61CC1944BB5A6BC823DDA9DFE153E1E70A83209F
+  95B0605D1C6B62E82FC40BF5F1A2ACB3477901E87331D1199B6394A8EED323BE
   ```
 
   Check it on your machine with:
